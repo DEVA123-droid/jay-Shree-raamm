@@ -8,14 +8,14 @@ import multiprocessing
 import threading
 import concurrent
 
-#BOT_OWNER_ROLE = 'fetch' # change to what you need
+#BOT_OWNER_ROLE = '★彡 𝗔𝗶𝗿𝗽𝗼𝗿𝘁༒𝗕𝗼𝘁 𝗥𝘂𝗻𝗻𝗲𝗿 彡★' # change to what you need
 
 
 
 
 oot_channel_id_list = [
-"569420128794443776",#lo unt
-    "640767742378770452", #lo king
+"654337758285791255",#lo unt
+    "657955269086674955", #lo king
 "626458458064945164", #lo iq
     "634705899889623060", #lo tf pri
     "630614554757431297",#lo galaxyprivate
@@ -223,7 +223,7 @@ class Bot(discord.Client):
         if message.author == self.user or message.guild == None:
             return
 
-        if message.content.lower() == "*":
+        if message.content.lower() == "lo":
             await message.delete()
             #if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
                 self.embed_msg = None
