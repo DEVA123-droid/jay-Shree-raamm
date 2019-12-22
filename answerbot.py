@@ -130,13 +130,13 @@ class Bot(discord.Client):
         self.answer_scores = answer_scores
 
         # embed creation
-        self.embed=discord.Embed(title="**__TRIVIA SAVAGE | PRO__**",description = '**Google Connected** <:google:630489499473936384>',colour = discord.Colour.green())
-        self.embed.add_field(name="**__OPTION 1__**", value="0", inline=False)
-        self.embed.add_field(name="**__OPTION 2__**", value="0", inline=False)
-        self.embed.add_field(name="**__OPTION 3__**", value="0", inline=False)
-        self.embed.set_footer(text=f"MADE BY SAVAGE PRO|CAPTAIN COOL#0786",\
-             icon_url ="https://cdn.discordapp.com/attachments/625195536332357637/631458174939037717/JPEG_20191009_023812.jpg")
-        self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/625195536332357637/631458174939037717/JPEG_20191009_023812.jpg") 
+        self.embed=discord.Embed(title="**__LOCO INDIA__**",description = '***Connecting to Loco Trivia...***',colour = discord.Colour.yellow())
+        self.embed.add_field(name="**__Answer ❶__**", value="0", inline=False)
+        self.embed.add_field(name="**__Answer ❷__**", value="0", inline=False)
+        self.embed.add_field(name="**__Answer ❸__**", value="0", inline=False)
+        self.embed.set_footer(text=f"DEVELOPED BY DEVA",\
+             icon_url ="https://cdn.discordapp.com/attachments/630030141153738763/658164289391034390/PicsArt_12-22-09.58.05.png")
+        self.embed.set_thumbnail(url="https://imgur.com/qeac0Ik.png") 
 
         #await self.bot.add_reaction(embed,':spy:')
 
@@ -194,12 +194,12 @@ class Bot(discord.Client):
             #if answer == 3:
                 #three_cross = ":x:"
 
-        self.embed.set_field_at(0, name="**__OPTION 1__**", value="**{0}**{1}".format(lst_scores[0], one_check))
-        self.embed.set_field_at(1, name="**__OPTION 2__**", value="**{0}**{1}".format(lst_scores[1], two_check))
-        self.embed.set_field_at(2, name="**__OPTION 3__**", value="**{0}**{1}".format(lst_scores[2], three_check))
-        self.embed.set_footer(text=f"MADE BY SAVAGE PRO|CAPTAIN COOL#0044",\
-             icon_url = "https://cdn.discordapp.com/attachments/625195536332357637/631458174939037717/JPEG_20191009_023812.jpg")
-        self.embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/625195536332357637/631458174939037717/JPEG_20191009_023812.jpg")
+        self.embed.set_field_at(0, name="**__Answer ❶__**", value="**{0}.0**{1}".format(lst_scores[0], one_check))
+        self.embed.set_field_at(1, name="**__Answer ❷__**", value="**{0}.0**{1}".format(lst_scores[1], two_check))
+        self.embed.set_field_at(2, name="**__Answer ❸__**", value="**{0}.0**{1}".format(lst_scores[2], three_check))
+        self.embed.set_footer(text=f"DEVELOPED BY DEVA",\
+             icon_url = "https://cdn.discordapp.com/attachments/630030141153738763/658164289391034390/PicsArt_12-22-09.58.05.png")
+        self.embed.set_thumbnail(url="https://imgur.com/qeac0Ik.png")
         self.embed.set_image(url = '') 
         
 
@@ -215,7 +215,7 @@ class Bot(discord.Client):
         await self.clear_results()
         await self.update_embeds()
         #await self.change_presence(activity=discord.Game(name='with '+str(len(set(self.get_all_members())))+' users'))
-        await self.change_presence(activity=discord.Game(name='with Captain Cool | *'))
+        await self.change_presence(activity=discord.Game(name='with Trivia Airport'))
 
     async def on_message(self, message):
 
