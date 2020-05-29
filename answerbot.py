@@ -8,7 +8,7 @@ import multiprocessing
 import threading
 import concurrent
 
-#BOT_OWNER_ROLE = '★彡 𝗔𝗶𝗿𝗽𝗼𝗿𝘁༒𝗕𝗼𝘁 𝗥𝘂𝗻𝗻𝗲𝗿 彡★' # change to what you need
+#BOT_OWNER_ROLE = 'Action Trivia || Bot Runner' # change to what you need
 
 
 
@@ -265,7 +265,7 @@ def bot_with_cyclic_update_process(update_event, answer_scores):
     upd_thread.start()
 
     loop = asyncio.get_event_loop()
-    loop.create_task(bot.start('NjQyMDE5MjE2NjQzNTg4MTEx.XgW20A.d30dlu4gF7KMWWJxHCtB57eiwj4'))
+    loop.create_task(bot.start('NzE0NzgyMjc0MTA4Nzg0NzIy.XtCyvw.jPK64nhbdwTkXduCYno5qmexRw8'))
     loop.run_forever()
 
 
@@ -274,7 +274,8 @@ def selfbot_process(update_event, answer_scores):
     selfbot = SelfBot(update_event, answer_scores)
 
     loop = asyncio.get_event_loop()
-    loop.create_task(selfbot.start('NTk1NTUxNzI1MTE3NjM2NjM4.XgWQzA.zDewejgKvoNOUoPQ0ZXBPdVSaqE',
+    loop.create_task(selfbot.start('NTY2MjA5NjkwMDA3MTA5NjMy.XfzjvA.MXoEZipQHZHYKLSOVTXpo24GUVg',
+
                                    bot=False))
     loop.run_forever()
 
